@@ -1,0 +1,79 @@
+use_synth :blade
+use_bpm 100
+
+
+
+
+live_loop :gorgeous do
+  #Measure 1
+  sleep 1
+  play :Ds5
+  sleep 0.5
+  play :Fs5
+  sleep 0.5
+  play :Fs5
+  sleep 1
+  sleep 0.5
+  play :Fs5
+  sleep 0.5
+  
+  # MEasure 2
+  play :Gs5
+  sleep 0.5
+  play :As5
+  sleep 0.5
+  sleep 0.5
+  play :F5
+  sleep 0.5
+  play :Gs5
+  sleep 0.5
+  play :As5
+  sleep 0.5
+  sleep 0.5
+  play :F5
+  sleep 0.5
+  
+  #Measure 3
+  sleep 1
+  play :Ds5
+  sleep 0.5
+  play :Fs5
+  sleep 0.5
+  play :Fs5
+  sleep 1
+  sleep 0.5
+  play :Fs5
+  sleep 0.5
+  
+  #Measure 4
+  play :Gs5
+  sleep 0.5
+  play :As5
+  sleep 0.5
+  sleep 0.5
+  play :F5
+  sleep 1
+  play :F5
+  sleep 0.5
+  play :Ds5
+  sleep 1
+end
+
+
+sleep 4
+live_loop:background do
+  16.times do
+    sample :drum_snare_soft
+    sleep 0.5
+  end
+  stop
+end
+
+sleep 4
+live_loop:background_notes do
+  16.times do
+    sample :drum_bass_hard, sustain:4
+    sleep 2
+  end
+  stop
+end
