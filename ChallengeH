@@ -1,0 +1,45 @@
+use_bpm 120
+use_synth :chiplead
+
+define :bots do |n2, n3|
+  play n2
+  play n3
+  sleep 0.5
+end
+
+bots  :a4, :a5
+bots  :c5, :c6
+bots  :c5, :c6
+bots  :a4, :a5
+bots  :d5, :d6
+bots  :a4, :a5
+bots  :e5, :e6
+bots  :d5, :d6
+
+# MEASURE 2 ---------------------------
+bots  :c5, :c6
+bots  :c5, :c6
+bots  :e5, :e6
+bots  :c5, :c6
+bots  :g5, :g6
+bots  :c4, :c5
+bots  :e5, :e6
+bots  :c4, :c5
+# MEASURE 3 ---------------------------
+bots  :g4, :g5
+bots  :g4, :g5
+bots  :b4, :b5
+bots  :g4, :g5
+bots  :c5, :c6
+bots  :g4, :g5
+bots  :d5, :d6
+bots  :c5, :c6
+# MEASURE 4 ---------------------------
+bots  :f4, :f5
+bots  :f4, :f5
+bots  :a4, :a5
+bots  :f4, :f5
+bots  :c5, :c6
+bots  :f4, :f5
+bots  :c5, :c6
+bots  :b4, :b5
