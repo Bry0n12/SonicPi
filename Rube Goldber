@@ -1,0 +1,33 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class turnGreen2 : MonoBehaviour
+{
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        // To use any color just Google the (R,G,B,A) value
+        Debug.Log("eric!");
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    // Upon collision with another GameObject, another GameObject will turn green
+    private void OnTriggerEnter(Collider other)
+    {
+        // Use the Console to understand what your code is doing
+        Debug.Log("HIT TheGoat!");
+
+        // Remove any material already on the "lisa" GameObject then set the color to be green
+        GameObject.FindWithTag("Finish").GetComponent<Renderer>().material.color = Color.green;
+        //GameObject.FindWithTag("plat").GetComponent<Renderer>().material.color = grn;
+    }
+}
+//Got rid of 2 lines of code because it was not working and switched the names of the things
