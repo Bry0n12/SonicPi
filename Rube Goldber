@@ -30,4 +30,4 @@ public class turnGreen2 : MonoBehaviour
         //GameObject.FindWithTag("plat").GetComponent<Renderer>().material.color = grn;
     }
 }
-//Got rid of 2 lines of code because it was not working and switched the names of the things
+//Got rid of 2 lines of code because it was not working and switched the names of the things. Added Debug.Log("eric!"); to see if code works
